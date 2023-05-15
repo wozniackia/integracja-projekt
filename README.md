@@ -63,3 +63,7 @@
 ### Dane historyczne
 
  - pomysłów brak na razie (ja bym chyba to wyjebal wgl, nie wiem co to znaczy nawet) 
+
+## Moja propozycja UI
+
+![ui](/integracje-ui.png)
