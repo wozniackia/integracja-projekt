@@ -51,3 +51,6 @@
  - MongoDB
 
  [Google Charts API](https://developers.google.com/chart/interactive/docs/gallery/combochart?hl=pl)
+
+ co wplywa na dzietnosc i na co wplywa dzietnosc
+ [EUROSTAT TFR](https://ec.europa.eu/eurostat/web/population-demography/demography-population-stock-balance/database)
