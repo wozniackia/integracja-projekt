@@ -12,29 +12,12 @@
 
 ## Wymagane funkcjonalności
 
- - eksport/import z pliku XML
- - eksport/import z pliku JSON/YAML
  - eksport/import z bazy danych
-
-###### to chyba obvious, import xml do bazy, export z bazy na json itd
- 
  - wykorzystanie ORM w celu dostępu do bazy danych
-
-###### NEN
- 
- - wykorzystanie usług typu SOAP
  - wykorzystanie usług typu REST
-
-###### no po prostu api trzeba wystawic tak i tak, ewentualnie tylko REST
- 
  - wykorzystanie mechanizmów uwierzytelnienia i autoryzacji przy użyciu tokenów
  JWT 
-
-###### NEN
-
  - wykorzystanie poziomów izolacji w bazie danych
-
-###### NEN
 
 ## Przydatne linki
 
