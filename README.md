@@ -5,7 +5,6 @@
  - Zestawienie danych na temat współczynnika dzietności z danymi:
  	- gospodarczymi
  	- politycznymi
- 	- historycznymi (?)
  - Aplikacja przedstawia wykres współczynnika dzietności
  - Na wykres można nanieść dodatkowo wypisane wyżej dane
  - Zakładamy dane na ostatnie 10 lat, zobaczymy jakie faktycznie znajdziemy
@@ -43,10 +42,6 @@
  - [Mozliwe keywordy po ktorych mozna szukac aktow prawnych](http://api.sejm.gov.pl/eli/keywords)
  - [Przykladowe zapytanie dla 10 najnowszych aktow prawnych pasujacych do keyworda 'wynagrodzenia minimalne'](https://api.sejm.gov.pl/eli/acts/search?keyword=wynagrodzenia%20minimalne&limit=10)
 
-### Dane historyczne
-
- - 
-
 ## Moja propozycja UI
 
 ![ui](/integracje-ui.png)
@@ -54,3 +49,5 @@
 ## DB
 
  - MongoDB
+
+ [Google Charts API](https://developers.google.com/chart/interactive/docs/gallery/combochart?hl=pl)
