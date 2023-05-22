@@ -8,7 +8,7 @@
  	- historycznymi (?)
  - Aplikacja przedstawia wykres współczynnika dzietności
  - Na wykres można nanieść dodatkowo wypisane wyżej dane
- - Zakładamy dane na ostatnie 20 lat, zobaczymy jakie faktycznie znajdziemy
+ - Zakładamy dane na ostatnie 10 lat, zobaczymy jakie faktycznie znajdziemy
 
 ## Wymagane funkcjonalności
 
@@ -50,3 +50,7 @@
 ## Moja propozycja UI
 
 ![ui](/integracje-ui.png)
+
+## DB
+
+ - MongoDB
