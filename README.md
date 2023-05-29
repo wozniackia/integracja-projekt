@@ -20,21 +20,14 @@
 
 ## Przydatne linki
 
-### Dzietnosc
-
- - [GUS ludność](https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/)
- - [GUS warunki życia](https://stat.gov.pl/obszary-tematyczne/warunki-zycia/)
- - [GUS ludnosc bilans](https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/ludnosc-bilans-opracowany-w-oparciu-o-wyniki-nsp-2011,1,1.html)
- - [GUS spisy powszechne](https://stat.gov.pl/spisy-powszechne/narodowe-spisy-powszechne/)
- - [GUS spisy powszechne - historyczne](https://stat.gov.pl/spisy-powszechne/narodowe-spisy-powszechne/ludnosc-wedlug-spisow-dane-historyczne/)
- - [GUS prognoza ludności](https://stat.gov.pl/obszary-tematyczne/ludnosc/prognoza-ludnosci/prognoza-ludnosci-gmin-na-lata-2017-2030-opracowanie-eksperymentalne,10,1.html)
- - [Reprodukcja ludności - API](https://dane.gov.pl/pl/dataset/1851,urodzenia-i-zgony-w-gdansku/resource/22331,wspoczynniki-dotyczace-reprodukcji-ludnosci/table)
+[### Dzietnosc](https://ec.europa.eu/eurostat/web/population-demography/demography-population-stock-balance/database)
 
 ### Dane gospodarcze
 
- - Inflacja
- - Wynagrodzenie minimalne
- - Srednie/mediany wynagrodzeń
+ - [Inflacja](https://ec.europa.eu/eurostat/web/products-datasets/-/tec00118)
+ - [Bezrobocie](https://ec.europa.eu/eurostat/web/products-datasets/-/tipsun20)
+ - [Dlug publiczny](https://ec.europa.eu/eurostat/web/products-datasets/-/gov_10q_ggdebt)
+ - [Wynagrodzenie minimalne](https://ec.europa.eu/eurostat/databrowser/view/tps00155/default/table?lang=en)
 
 ### Dane polityczne
 
@@ -42,15 +35,8 @@
  - [Mozliwe keywordy po ktorych mozna szukac aktow prawnych](http://api.sejm.gov.pl/eli/keywords)
  - [Przykladowe zapytanie dla 10 najnowszych aktow prawnych pasujacych do keyworda 'wynagrodzenia minimalne'](https://api.sejm.gov.pl/eli/acts/search?keyword=wynagrodzenia%20minimalne&limit=10)
 
-## Moja propozycja UI
-
-![ui](/integracje-ui.png)
-
 ## DB
 
  - MongoDB
 
  [Google Charts API](https://developers.google.com/chart/interactive/docs/gallery/combochart?hl=pl)
-
- co wplywa na dzietnosc i na co wplywa dzietnosc
- [EUROSTAT TFR](https://ec.europa.eu/eurostat/web/population-demography/demography-population-stock-balance/database)
