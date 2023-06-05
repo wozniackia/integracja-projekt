@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://project-user:user123@cluster0.f4iopv1.mongodb.net/project-integracja-systemow?retryWrites=true&w=majority

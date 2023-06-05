@@ -1,51 +1,20 @@
 package edu.integracja.integracjaproject.model;
 
+import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "fertility_rate")
+@Data
+@RequiredArgsConstructor
 public class FertilityRate {
-
-    private int id;
+    @Id
+    private String id;
+    @NonNull
     private Integer year;
+    @NonNull
     private Double rate;
-
-    public FertilityRate(int id, Integer year, Double rate) {
-        this.id = id;
-        this.year = year;
-        this.rate = rate;
-    }
-
-    public FertilityRate() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public Integer getYear() {
-        return year;
-    }
-
-    public void setYear(Integer year) {
-        this.year = year;
-    }
-
-    public Double getRate() {
-        return rate;
-    }
-
-    public void setRate(Double rate) {
-        this.rate = rate;
-    }
-
-    @Override
-    public String toString() {
-        return "FertilityRate{" +
-                "id=" + id +
-                ", year=" + year +
-                ", rate=" + rate +
-                '}';
-    }
 }
 
