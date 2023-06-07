@@ -6,12 +6,10 @@ import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.io.Serializable;
-
-@Document(collection = "fertility_rate")
+@Document(collection = "inflation_rate")
 @Data
 @RequiredArgsConstructor
-public class FertilityRate implements Serializable {
+public class InflationRate {
     @Id
     private String id;
     @NonNull
@@ -19,4 +17,3 @@ public class FertilityRate implements Serializable {
     @NonNull
     private Double rate;
 }
-

@@ -5,4 +5,7 @@ server:
 spring:
   data:
     mongodb:
+#      username: project-user
+#      password: user123
+#      privileges: read-only
       uri: mongodb+srv://project-user:user123@cluster0.f4iopv1.mongodb.net/project-integracja-systemow?retryWrites=true&w=majority

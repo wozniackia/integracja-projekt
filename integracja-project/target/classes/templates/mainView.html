@@ -1,10 +1,43 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Getting Started: Serving Web Content</title>
+    <title>Integracja Systemow - Projekt</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script th:inline="javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Rok');
+      data.addColumn('number', 'Współczynnik dzietności');
+      data.addColumn('number', 'Test');
+
+      data.addRows(
+      [[${data}]].map(o => [ o[0].toString(), o[1], o[2] ])
+      );
+
+
+        var options = {
+          'title' : 'Współczynnik dzietności w Polsce w latach 2010-2020',
+          'vAxis': {title: 'Współczynnik'},
+          'hAxis': {title: 'Rok'},
+          'pointSize': 10,
+          'lineWidth': 4,
+          'seriesType': 'line',
+          'lineDashStyle': [4, 4]
+          //series: {3: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
-<p>Hello!</p>
+    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+<!--    <p th:text="${fertilities}">Fertilities</p>-->
 </body>
 </html>

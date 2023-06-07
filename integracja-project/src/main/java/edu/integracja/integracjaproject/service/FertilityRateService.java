@@ -3,6 +3,8 @@ package edu.integracja.integracjaproject.service;
 import edu.integracja.integracjaproject.model.FertilityRate;
 import edu.integracja.integracjaproject.repository.FertilityRateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
