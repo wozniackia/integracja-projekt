@@ -1,11 +1,13 @@
 package edu.integracja.integracjaproject.model;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.Data;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@Entity
 @Document(collection = "inflation_rate")
 @Data
 @RequiredArgsConstructor

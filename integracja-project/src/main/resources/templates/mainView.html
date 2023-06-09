@@ -3,6 +3,12 @@
 <head>
     <title>Integracja Systemow - Projekt</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link th:href="@{/css/styles.css}" rel="stylesheet" />
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script th:inline="javascript">
       google.charts.load('current', {'packages':['corechart']});
@@ -13,7 +19,7 @@
         var data = new google.visualization.DataTable();
       data.addColumn('string', 'Rok');
       data.addColumn('number', 'Współczynnik dzietności');
-      data.addColumn('number', 'Test');
+      data.addColumn('number', 'Współczynnik inflacji');
 
       data.addRows(
       [[${data}]].map(o => [ o[0].toString(), o[1], o[2] ])
@@ -37,7 +43,17 @@
     </script>
 </head>
 <body>
-    <div id="chart_div" style="width: 900px; height: 500px;"></div>
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top">Integracja Systemów - Projekt</a>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead bg-secondary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <div id="chart_div" style="width: 900px; height: 500px;"></div>
+    </div>
+</header>
 <!--    <p th:text="${fertilities}">Fertilities</p>-->
 </body>
 </html>

@@ -1,8 +1,8 @@
 package edu.integracja.integracjaproject.controller;
 
 import edu.integracja.integracjaproject.model.FertilityRate;
-import edu.integracja.integracjaproject.model.InflationRate;
 import edu.integracja.integracjaproject.service.FertilityRateService;
+import edu.integracja.integracjaproject.service.InflationRateService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +18,8 @@ public class WebController {
 
     @Autowired
     private FertilityRateService fertilityRateService;
+    @Autowired
+    private InflationRateService inflationRateService;
 
     @GetMapping("/")
     public String displayMainView(Model model) {
@@ -31,7 +33,7 @@ public class WebController {
                 .map(fertilityRate -> List.of(
                         fertilityRate.getYear(),
                         fertilityRate.getRate(),
-                        fertilityRateService.getDataByYear(fertilityRate.getYear()).get().getRate()-0.3
+                        fertilityRateService.getDataByYear(fertilityRate.getYear()).get().getRate()
                 ))
                 .collect(Collectors.toList())
         );

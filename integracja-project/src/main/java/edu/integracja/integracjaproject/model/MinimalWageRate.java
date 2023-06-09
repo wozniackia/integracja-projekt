@@ -10,10 +10,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import java.io.Serializable;
 
 @Entity
-@Document(collection = "fertility_rate")
+@Document(collection = "minimal_wage_rate")
 @Data
 @RequiredArgsConstructor
-public class FertilityRate implements Serializable {
+public class MinimalWageRate implements Serializable {
     @Id
     private String id;
     @NonNull
@@ -21,4 +21,3 @@ public class FertilityRate implements Serializable {
     @NonNull
     private Double rate;
 }
-
