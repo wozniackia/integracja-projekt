@@ -1,10 +1,9 @@
 package edu.integracja.integracjaproject.service;
 
 import edu.integracja.integracjaproject.model.FertilityRate;
+import edu.integracja.integracjaproject.model.RateModel;
 import edu.integracja.integracjaproject.repository.FertilityRateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,5 +20,15 @@ public class FertilityRateService {
 
     public Optional<FertilityRate> getDataByYear(Integer year) {
         return fertilityRateRepository.findByYear(year);
+    }
+
+    public List<FertilityRate> insertAll(Iterable<FertilityRate> data) {return fertilityRateRepository.insert(data);}
+
+    public void deleteAll() {fertilityRateRepository.deleteAll();}
+
+    public List<FertilityRate> fromRateModel(List<RateModel> data) {
+        return data.stream()
+                .map(rateModel -> new FertilityRate(rateModel.getYear(), rateModel.getRate()))
+                .toList();
     }
 }

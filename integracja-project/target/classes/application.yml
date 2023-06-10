@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8002
 
 
 spring:
@@ -9,3 +9,7 @@ spring:
 #      password: user123
 #      privileges: read-only
       uri: mongodb+srv://project-user:user123@cluster0.f4iopv1.mongodb.net/project-integracja-systemow?retryWrites=true&w=majority
+
+files:
+  relative: src/main/resources/data/
+  write: src/main/resources/data/json/
